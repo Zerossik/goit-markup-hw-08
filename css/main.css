@@ -32,6 +32,11 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+}
+
+img {
+  display: block;
 }
 
 .section {
@@ -359,6 +364,8 @@ img {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
