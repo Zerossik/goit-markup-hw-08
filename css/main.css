@@ -34,12 +34,6 @@ img {
   display: block;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -203,13 +197,8 @@ img {
   border-radius: 4px;
 }
 
-.peculiarities-list {
-  display: flex;
-  gap: 30px;
-}
-
 .peculiarities-item {
-  width: 270px;
+  width: 100%;
 }
 
 .peculiarities-item-block {
@@ -222,7 +211,7 @@ img {
   border-radius: 4px;
 }
 
-.peculiarities-item-title {
+.peculiarities__title {
   font-size: 14px;
   line-height: 1.1428571429;
   text-transform: uppercase;
@@ -236,6 +225,18 @@ img {
   color: var(--discription-color);
 }
 
+@media screen and (max-width: 479px) {
+  .peculiarities {
+    max-width: 479px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .peculiarities {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .work {
   padding-top: 0;
 }

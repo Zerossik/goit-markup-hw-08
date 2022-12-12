@@ -1,16 +1,11 @@
-.peculiarities {
-}
-
-.peculiarities-title {
-}
-
 .peculiarities-list {
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 }
 
 .peculiarities-item {
-  width: 270px;
+  // width: 270px;
+  width: 100%;
 }
 
 .peculiarities-item-block {
@@ -24,7 +19,7 @@
   border-radius: 4px;
 }
 
-.peculiarities-item-title {
+.peculiarities__title {
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
@@ -37,4 +32,17 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--discription-color);
+}
+
+@media screen and (max-width: 479px) {
+  .peculiarities {
+    max-width: 479px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .peculiarities {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
