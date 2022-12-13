@@ -361,6 +361,13 @@ img {
   color: var(--main-title-color);
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1199px) {
+  .team-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
 
 .team-list {
   display: flex;
@@ -375,9 +382,20 @@ img {
   background-color: #ffffff;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
+  }
+}
 
 .team-container {
   padding: 30px 0;
+  padding-bottom: 24px;
 }
 
 .team-name {
