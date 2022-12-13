@@ -106,11 +106,17 @@
   fill: #ffffff;
 }
 .subscribe {
-  margin-left: 93px;
+  text-align: center;
+  // margin-left: 93px;
 }
 
 .subscribe-form {
   position: relative;
+}
+.subscribe__container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
 }
 .subscribe-input {
   padding-left: 16px;
@@ -157,6 +163,13 @@
   .subscribe-input:not(:placeholder-shown) + & {
     transform: translate(calc(-100% - 20px), -50%);
   }
+  @media screen and (max-width: 479px) {
+    transition: transform 400ms var(--transition-t-f);
+    .subscribe-input:focus + &,
+    .subscribe-input:not(:placeholder-shown) + & {
+      transform: translateY(-250%);
+    }
+  }
 }
 
 .subscribe-btn {
@@ -180,7 +193,7 @@
   background-image: url(../images/icon-send.png);
   background-repeat: no-repeat;
   background-position: right 28px bottom 50%;
-  margin-left: 12px;
+  // margin-left: 12px;
 }
 .subscribe-btn-icon {
   fill: #ffffff;

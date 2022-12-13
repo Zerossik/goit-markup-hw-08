@@ -597,11 +597,17 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
+  text-align: center;
 }
 
 .subscribe-form {
   position: relative;
+}
+
+.subscribe__container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .subscribe-input {
@@ -651,6 +657,20 @@ img {
 .subscribe-input:focus + .subscribe-label, .subscribe-input:not(:placeholder-shown) + .subscribe-label {
   transform: translate(calc(-100% - 20px), -50%);
 }
+@media screen and (max-width: 479px) {
+  .subscribe-label {
+    transition: transform 400ms var(--transition-t-f);
+  }
+  .subscribe-input:not(:-moz-placeholder-shown) + .subscribe-label {
+    transform: translateY(-250%);
+  }
+  .subscribe-input:not(:-ms-input-placeholder) + .subscribe-label {
+    transform: translateY(-250%);
+  }
+  .subscribe-input:focus + .subscribe-label, .subscribe-input:not(:placeholder-shown) + .subscribe-label {
+    transform: translateY(-250%);
+  }
+}
 
 .subscribe-btn {
   padding: 10px 28px;
@@ -671,7 +691,6 @@ img {
   background-image: url(../images/icon-send.png);
   background-repeat: no-repeat;
   background-position: right 28px bottom 50%;
-  margin-left: 12px;
 }
 
 .subscribe-btn-icon {
