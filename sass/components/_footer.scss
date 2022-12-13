@@ -12,7 +12,8 @@
   color: #ffffff;
   text-decoration: none;
 
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  margin-bottom: 28px;
   display: block;
 }
 
@@ -22,8 +23,10 @@
 
 .footer-adress-list {
 }
+
 .footer-adress-item:not(:last-child) {
-  margin-bottom: 9px;
+  // margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .adress-link {
@@ -49,12 +52,21 @@
   }
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .adress-container {
-  margin-right: 70px;
+  text-align: center;
+
+  margin-bottom: 60px;
+  // margin-right: 70px;
+}
+
+.footer-soc-block {
+  text-align: center;
+
+  margin-bottom: 60px;
 }
 
 .active-soc {
@@ -68,6 +80,7 @@
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  justify-content: center;
 }
 .footer-soc-item {
   height: 44px;
