@@ -32,7 +32,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 img {
@@ -548,14 +548,41 @@ img {
   color: var(--activ-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 94px;
+  }
+}
+
 .adress-container {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .adress-container {
+    margin-bottom: 0;
+  }
 }
 
 .footer-soc-block {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-block {
+    text-align: left;
+  }
 }
 
 .active-soc {
@@ -598,6 +625,11 @@ img {
 
 .subscribe {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    text-align: left;
+  }
 }
 
 .subscribe-form {
@@ -673,6 +705,8 @@ img {
 }
 
 .subscribe-btn {
+  display: block;
+  margin: 0 auto;
   padding: 10px 28px;
   padding-right: 62px;
   background-color: var(--activ-color);
@@ -686,11 +720,15 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-
 .subscribe-btn {
   background-image: url(../images/icon-send.png);
   background-repeat: no-repeat;
   background-position: right 28px bottom 50%;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-btn {
+    display: inline-block;
+  }
 }
 
 .subscribe-btn-icon {
