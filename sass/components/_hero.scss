@@ -28,6 +28,7 @@
     @include retina {
       background-image: var(--hero-gradient), url(../../images/hero-desktop-3200.jpg);
     }
+    max-width: 1600px;
   }
 }
 .hero-title {
