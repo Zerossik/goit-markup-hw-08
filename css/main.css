@@ -192,6 +192,10 @@ img {
   transition: color 250ms var(--transition-t-f);
 }
 
+.contact-item:not(:last-child) .link {
+  margin-bottom: 10px;
+}
+
 .mail-icon {
   fill: currentColor;
 }
