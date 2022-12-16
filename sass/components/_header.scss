@@ -10,7 +10,8 @@
 }
 
 .site-nav {
-  @extend .header-container;
+  // @extend .header-container;
+  padding: 16px 0;
 }
 
 .logo {
@@ -29,8 +30,10 @@
 }
 
 .header-list {
-  display: flex;
-  gap: 50px;
+  // display: flex;
+  // gap: 50px;
+
+  display: none;
 }
 
 .header-item .link {
@@ -61,9 +64,11 @@
   color: var(--activ-color);
 }
 .contact {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
+  // display: flex;
+  // gap: 50px;
+  // margin-left: auto;
+
+  display: none;
 }
 
 .contact-item .link {

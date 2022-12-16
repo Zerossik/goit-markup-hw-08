@@ -102,9 +102,13 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container, .contact-item .link, .site-nav {
+.header-container, .contact-item .link {
   display: flex;
   align-items: center;
+}
+
+.site-nav {
+  padding: 16px 0;
 }
 
 .logo {
@@ -123,8 +127,7 @@ img {
 }
 
 .header-list {
-  display: flex;
-  gap: 50px;
+  display: none;
 }
 
 .header-item .link {
@@ -150,9 +153,7 @@ img {
 }
 
 .contact {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
+  display: none;
 }
 
 .contact-item .link {
