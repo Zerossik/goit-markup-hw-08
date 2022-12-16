@@ -181,6 +181,13 @@ img {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+}
 
 .contact-item .link {
   gap: 10px;
@@ -194,6 +201,11 @@ img {
 
 .contact-item:not(:last-child) .link {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-item:not(:last-child) .link {
+    margin: 0;
+  }
 }
 
 .mail-icon {
