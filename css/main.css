@@ -235,6 +235,18 @@ img {
   border-radius: 2px;
 }
 
+.mobile-menu__btn .mobile-menu__close {
+  display: none;
+}
+
+.mobile-menu__btn .is-open .mobile-menu__close {
+  display: block;
+}
+
+.mobile-menu__close .is-open .mobile-menu__open {
+  display: none;
+}
+
 .hero {
   background-color: #2f303a;
   text-align: center;
