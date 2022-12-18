@@ -25,34 +25,62 @@
     <!--шапка-->
     <header class="header">
       <div class="container header-container">
-        <nav class="site-nav">
-          <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
-          <ul class="header-list">
-            <li class="header-item list">
-              <a href="./index.html" class="link">Студія</a>
+        <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+        <button type="button" class="mobile-menu__btn button js-open-menu" aria-expanded="false">
+          <svg class="header-nav__mobile" width="40" height="40">
+            <use href="./images/icon.svg#icon-menu-40px" class="mobile-menu__open"></use>
+          </svg>
+        </button>
+        <div class="header-menu__mobile js-menu-container" id="menu-control">
+          <button type="button" class="mobile-menu__close js-close-menu button">
+            <svg class="header-nav__mobile" width="40" height="40">
+              <use href="./images/icon.svg#icon-close-40px" class="mobile-menu__close"></use>
+            </svg>
+          </button>
+          <nav class="site-nav">
+            <ul class="header-list">
+              <li class="header-item list">
+                <a href="./index.html" class="link ">Студія</a>
+              </li>
+              <li class="header-item list">
+                <a href="./portfolio.html" class="link link-active">Портфоліо</a>
+              </li>
+              <li class="header-item list"><a href="" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <ul class="contact">
+            <li class="contact-item list">
+              <a href="mailto:info@devstudio.com" class="link"
+                ><svg class="mail-icon" height="12px" width="16px">
+                  <use href="./images/icon.svg#icon-mail-hover"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="header-item list">
-              <a href="./portfolio.html" class="link link-active">Портфоліо</a>
+            <li class="contact-item list">
+              <a href="tel:+380961111111" class="link">
+                <svg class="phone-icon" height="16px" width="10px">
+                  <use href="./images/icon.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="header-item list"><a href="" class="link">Контакти</a></li>
           </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact-item list">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="mail-icon" height="12px" width="16px">
-                <use href="./images/icon.svg#icon-mail-hover"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item list">
-            <a href="tel:+380961111111" class="link">
-              <svg class="phone-icon" height="16px" width="10px">
-                <use href="./images/icon.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Instagram</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu"></div>
       </div>
     </header>
 
@@ -290,93 +318,101 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="adress-container">
-          <a href="./index.html" class="footer-logo"><span class="logo-color">Web</span>Studio</a>
-          <address class="footer-adress">
-            <ul class="footer-adress-list list">
-              <li class="footer-adress-item">
+        <div class="footer-container__wrap">
+          <div class="adress-container">
+            <a href="./index.html" class="footer-logo"><span class="logo-color">Web</span>Studio</a>
+            <address class="footer-adress">
+              <ul class="footer-adress-list list">
+                <li class="footer-adress-item">
+                  <a
+                    href="https://goo.gl/maps/F62iMvUqf9gxYhQ9A"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    class="adress-link link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-adress-item">
+                  <a href="mailto:info@devstudio.com" class="contact-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress-item">
+                  <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-soc-block">
+            <b class="active-soc">приєднуйтесь</b>
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
                 <a
-                  href="https://goo.gl/maps/F62iMvUqf9gxYhQ9A"
+                  href="#"
+                  class="footer-soc-link link"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="adress-link link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  aria-label="Instagram"
+                  ><svg class="icon-footer" width="20" height="20">
+                    <use href="./images/icon.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="footer-adress-item">
-                <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
+              <li class="footer-soc-item">
+                <a
+                  href="#"
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  aria-label="Twitter"
+                  ><svg class="icon-footer" width="20" height="20">
+                    <use href="./images/icon.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="footer-adress-item">
-                <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
+              <li class="footer-soc-item">
+                <a
+                  href="#"
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  aria-label="facebook"
+                  ><svg class="icon-footer" width="20" height="20">
+                    <use href="./images/icon.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  href="#"
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  aria-label="linkedIn"
+                  ><svg class="icon-footer" width="20" height="20">
+                    <use href="./images/icon.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-soc-block">
-          <b class="active-soc">приєднуйтесь</b>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
-              <a
-                href="#"
-                class="footer-soc-link link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                aria-label="Instagram"
-                ><svg class="icon-footer" width="20" height="20">
-                  <use href="./images/icon.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                href="#"
-                class="footer-soc-link link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                aria-label="Twitter"
-                ><svg class="icon-footer" width="20" height="20">
-                  <use href="./images/icon.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                href="#"
-                class="footer-soc-link link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                aria-label="facebook"
-                ><svg class="icon-footer" width="20" height="20">
-                  <use href="./images/icon.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="footer-soc-item">
-              <a
-                href="#"
-                class="footer-soc-link link"
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                aria-label="linkedIn"
-                ><svg class="icon-footer" width="20" height="20">
-                  <use href="./images/icon.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <b class="subscribe-title">Підпишіться на розсилку</b>
           <form class="subscribe-form">
-            <input
-              class="subscribe-input"
-              type="email"
-              id="subscribe-input"
-              placeholder=" "
-              name="usr-email"
-              required
-            />
-            <label for="subscribe-input" class="subscribe-label">E-mail</label>
+            <div class="subscribe__container">
+              <input
+                class="subscribe-input"
+                type="email"
+                id="subscribe-input"
+                placeholder=" "
+                name="usr-email"
+                required
+              />
+
+              <label for="subscribe-input" class="subscribe-label">E-mail</label>
+            </div>
             <button type="submit" class="subscribe-btn button">Підписатися</button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

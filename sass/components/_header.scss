@@ -13,9 +13,6 @@
   }
 }
 
-.site-nav {
-  // @extend .header-container;
-}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -203,7 +200,7 @@ margin-bottom: 10px;
     height: 100%;
     padding: 48px 40px;
     overflow: auto;
-
+z-index: 10;
     background-color: #ffffff;
   }
 

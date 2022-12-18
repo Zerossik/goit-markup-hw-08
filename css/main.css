@@ -305,6 +305,7 @@ img {
   height: 100%;
   padding: 48px 40px;
   overflow: auto;
+  z-index: 10;
   background-color: #ffffff;
 }
 .header-menu__mobile.is-open .link {
