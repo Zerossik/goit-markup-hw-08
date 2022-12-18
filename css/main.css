@@ -246,6 +246,10 @@ img {
   }
 }
 
+.contact-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .contact-item:last-child .link {
     font-weight: 500;
