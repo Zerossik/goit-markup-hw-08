@@ -5,17 +5,19 @@
 }
 
 .header-container {
-  // display: flex;
-  // align-items: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  // }
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
   // @extend .header-container;
 }
 
@@ -39,7 +41,6 @@
   // display: flex;
   // gap: 50px;
 
-  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
@@ -47,10 +48,22 @@
 }
 
 .mobile-menu__btn {
+  // z-index: 10;
+  top: 0;
+  right: 0;
+  margin-left: auto;
   background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  background-color: transparent;
 }
 // .header-nav__mobile {
 //   @media screen and (min-width: 768px) {
@@ -85,12 +98,23 @@
 .header-item .link-active {
   color: var(--activ-color);
 }
+@media screen and (min-width: 768px) {
+  .link-active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--activ-color);
+    border-radius: 2px;
+  }
+}
 .contact {
   // display: flex;
   // gap: 50px;
   // margin-left: auto;
-
-  display: none;
   @media screen and (min-width: 768px) {
     display: block;
     margin: auto;
@@ -135,23 +159,34 @@
 .header-item {
   position: relative;
 }
-.link-active::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  display: block;
-  height: 4px;
-  width: 100%;
-  background-color: var(--activ-color);
-  border-radius: 2px;
+
+.header-menu__mobile {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  &.is-open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+  }
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // background-color: #ffffff;
+  // width: 100%;
+  // height: 100%;
 }
 .mobile-menu__btn .mobile-menu__close {
   display: none;
 }
 .mobile-menu__btn .is-open .mobile-menu__close {
   display: block;
-}
-.mobile-menu__close .is-open .mobile-menu__open {
-  display: none;
 }

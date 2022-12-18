@@ -102,16 +102,19 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header-container, .contact-item .link {
-    display: flex;
-  }
+.header-container, .contact-item .link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin: 0;
+  }
 }
 
 .logo {
@@ -133,9 +136,6 @@ img {
   color: var(--activ-color);
 }
 
-.header-list {
-  display: none;
-}
 @media screen and (min-width: 768px) {
   .header-list {
     display: flex;
@@ -144,12 +144,22 @@ img {
 }
 
 .mobile-menu__btn {
+  top: 0;
+  right: 0;
+  margin-left: auto;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__btn {
     display: none;
   }
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
 }
 
 .header-item .link {
@@ -174,8 +184,18 @@ img {
   color: var(--activ-color);
 }
 
-.contact {
-  display: none;
+@media screen and (min-width: 768px) {
+  .link-active::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--activ-color);
+    border-radius: 2px;
+  }
 }
 @media screen and (min-width: 768px) {
   .contact {
@@ -223,16 +243,23 @@ img {
   position: relative;
 }
 
-.link-active::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
+.header-menu__mobile {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-menu__mobile {
+    display: flex;
+  }
+}
+.header-menu__mobile.is-open {
   display: block;
-  height: 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
   width: 100%;
-  background-color: var(--activ-color);
-  border-radius: 2px;
+  height: 100%;
+  padding: 48px 40px;
 }
 
 .mobile-menu__btn .mobile-menu__close {
@@ -241,10 +268,6 @@ img {
 
 .mobile-menu__btn .is-open .mobile-menu__close {
   display: block;
-}
-
-.mobile-menu__close .is-open .mobile-menu__open {
-  display: none;
 }
 
 .hero {
