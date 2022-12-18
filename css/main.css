@@ -218,6 +218,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact {
     display: block;
+    margin: auto 0;
     margin-left: auto;
   }
 }
@@ -225,7 +226,6 @@ img {
   .contact {
     display: flex;
     gap: 50px;
-    margin-left: auto;
   }
 }
 
@@ -278,6 +278,7 @@ img {
 
 .header-menu__mobile {
   display: none;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header-menu__mobile {
