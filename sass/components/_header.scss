@@ -214,3 +214,17 @@
 // .mobile-menu__btn .is-open .mobile-menu__close {
 //   display: block;
 // }
+.mobile-menu__list {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu__list .link {
+  color: var(--activ-color);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+}

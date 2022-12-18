@@ -288,6 +288,23 @@ img {
   padding: 48px 40px;
 }
 
+.mobile-menu__list {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__list {
+    display: none;
+  }
+}
+
+.mobile-menu__list .link {
+  color: var(--activ-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+}
+
 .hero {
   background-color: #2f303a;
   text-align: center;
